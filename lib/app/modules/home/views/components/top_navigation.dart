@@ -17,30 +17,31 @@ class TopNavigation extends GetView with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: mBaseColor,
-        elevation: 0,
-        title: Padding(
-          padding: const EdgeInsets.all(baseAllPadding),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              SvgPicture.asset('assets/icons/ham.svg', width: mediumSvgSize),
-              Text('Travelable', style: logoText),
-              Container(
-                width: 42,
-                height: 42,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  image: const DecorationImage(
-                    image: AssetImage('assets/images/profile.jpg'),
-                    fit: BoxFit.cover,
-                  ),
+      automaticallyImplyLeading: false,
+      backgroundColor: mBaseColor,
+      elevation: 0,
+      title: Padding(
+        padding: const EdgeInsets.all(baseAllPadding),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            SvgPicture.asset('assets/icons/ham.svg', width: mediumSvgSize),
+            Text('Travelable', style: logoText),
+            Container(
+              width: 42,
+              height: 42,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                image: const DecorationImage(
+                  image: AssetImage('assets/images/profile.jpg'),
+                  fit: BoxFit.cover,
                 ),
-              )
-            ],
-          ),
-        ));
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

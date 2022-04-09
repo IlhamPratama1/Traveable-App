@@ -24,25 +24,27 @@ class SearchSection extends GetView {
                 width: normalSvgSize)),
         const SizedBox(width: 12),
         Expanded(
-            child: Container(
-                margin: const EdgeInsets.only(right: containerPadding),
-                height: 54,
-                decoration: BoxDecoration(
-                    color: mBlueTransparentColor,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Padding(
-                    padding: const EdgeInsets.only(left: 20, right: 10),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Text('Search your trip', style: placeholderText),
-                        IconButton(
-                            onPressed: () {},
-                            icon: SvgPicture.asset('assets/icons/search.svg',
-                                width: normalSvgSize + 6))
-                      ],
-                    )))),
+          child: Container(
+            height: 54,
+            decoration: BoxDecoration(
+                color: mBlueTransparentColor,
+                borderRadius: BorderRadius.circular(10)),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20, right: 10),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text('Search your trip', style: placeholderText),
+                  IconButton(
+                      onPressed: () {},
+                      icon: SvgPicture.asset('assets/icons/search.svg',
+                          width: normalSvgSize + 6))
+                ],
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }

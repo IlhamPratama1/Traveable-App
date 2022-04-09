@@ -31,45 +31,47 @@ class BottomNavigation extends GetView<HomeController> {
               offset: Offset(0, 7), // changes position of shadow
             ),
           ]),
-      child: Obx(() => BottomNavigationBar(
-            items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                  icon: c.selectedMenu.value == 0
-                      ? SvgPicture.asset('assets/icons/home_fill.svg',
-                          width: normalSvgSize)
-                      : SvgPicture.asset('assets/icons/home.svg',
-                          width: normalSvgSize),
-                  label: ''),
-              BottomNavigationBarItem(
-                  icon: c.selectedMenu.value == 1
-                      ? SvgPicture.asset('assets/icons/location_fill.svg',
-                          width: normalSvgSize)
-                      : SvgPicture.asset('assets/icons/location.svg',
-                          width: normalSvgSize),
-                  label: ''),
-              BottomNavigationBarItem(
-                  icon: c.selectedMenu.value == 2
-                      ? SvgPicture.asset('assets/icons/bookmark_fill.svg',
-                          width: normalSvgSize)
-                      : SvgPicture.asset('assets/icons/bookmark.svg',
-                          width: normalSvgSize),
-                  label: ''),
-              BottomNavigationBarItem(
-                  icon: c.selectedMenu.value == 3
-                      ? SvgPicture.asset('assets/icons/profile_fill.svg',
-                          width: mediumSvgSize + 2)
-                      : SvgPicture.asset('assets/icons/profile.svg',
-                          width: mediumSvgSize + 4),
-                  label: ''),
-            ],
-            currentIndex: c.selectedMenu.value,
-            backgroundColor: Colors.transparent,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
-            type: BottomNavigationBarType.fixed,
-            elevation: 0,
-            onTap: c.setSelectedMenu,
-          )),
+      child: Obx(
+        () => BottomNavigationBar(
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+                icon: c.selectedMenu.value == 0
+                    ? SvgPicture.asset('assets/icons/home_fill.svg',
+                        width: normalSvgSize)
+                    : SvgPicture.asset('assets/icons/home.svg',
+                        width: normalSvgSize),
+                label: ''),
+            BottomNavigationBarItem(
+                icon: c.selectedMenu.value == 1
+                    ? SvgPicture.asset('assets/icons/location_fill.svg',
+                        width: normalSvgSize)
+                    : SvgPicture.asset('assets/icons/location.svg',
+                        width: normalSvgSize),
+                label: ''),
+            BottomNavigationBarItem(
+                icon: c.selectedMenu.value == 2
+                    ? SvgPicture.asset('assets/icons/bookmark_fill.svg',
+                        width: normalSvgSize)
+                    : SvgPicture.asset('assets/icons/bookmark.svg',
+                        width: normalSvgSize),
+                label: ''),
+            BottomNavigationBarItem(
+                icon: c.selectedMenu.value == 3
+                    ? SvgPicture.asset('assets/icons/profile_fill.svg',
+                        width: mediumSvgSize + 2)
+                    : SvgPicture.asset('assets/icons/profile.svg',
+                        width: mediumSvgSize + 4),
+                label: ''),
+          ],
+          currentIndex: c.selectedMenu.value,
+          backgroundColor: Colors.transparent,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          type: BottomNavigationBarType.fixed,
+          elevation: 0,
+          onTap: c.setSelectedMenu,
+        ),
+      ),
     );
   }
 }
