@@ -2,10 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-// Controller
-import '../../controllers/home_controller.dart';
-
-class ExplorePage extends GetView<HomeController> {
+class ExplorePage extends GetView {
   const ExplorePage({Key? key}) : super(key: key);
 
   @override

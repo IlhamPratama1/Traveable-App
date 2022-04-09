@@ -16,9 +16,7 @@ import 'package:travelable_app/model/explore_place_model.dart';
 import '../components/place_card.dart';
 
 class PlaceSection extends GetView<HomeController> {
-  PlaceSection({Key? key}) : super(key: key);
-
-  final HomeController c = Get.find();
+  const PlaceSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,12 +39,12 @@ class PlaceSection extends GetView<HomeController> {
                     minimumSize: const Size(0, 12),
                   ),
                   onPressed: () {
-                    c.setSelectedPlaceCategory(index);
+                    controller.setSelectedPlaceCategory(index);
                   },
                   child: Obx(
                     () => Text(
                       placeCategories[index].category,
-                      style: c.placeCategory.value == index
+                      style: controller.placeCategory.value == index
                           ? placeFilterText
                           : placeholderText,
                       textAlign: TextAlign.left,

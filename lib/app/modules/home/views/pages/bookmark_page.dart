@@ -2,10 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-// Controller
-import '../../controllers/home_controller.dart';
-
-class BookmarkPage extends GetView<HomeController> {
+class BookmarkPage extends GetView {
   const BookmarkPage({Key? key}) : super(key: key);
 
   @override

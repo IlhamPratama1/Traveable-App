@@ -11,9 +11,7 @@ import 'package:travelable_app/constant/value_const.dart';
 import '../../controllers/home_controller.dart';
 
 class BottomNavigation extends GetView<HomeController> {
-  BottomNavigation({Key? key}) : super(key: key);
-
-  final HomeController c = Get.find();
+  const BottomNavigation({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,41 +33,41 @@ class BottomNavigation extends GetView<HomeController> {
         () => BottomNavigationBar(
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: c.selectedMenu.value == 0
+                icon: controller.selectedMenu.value == 0
                     ? SvgPicture.asset('assets/icons/home_fill.svg',
                         width: normalSvgSize)
                     : SvgPicture.asset('assets/icons/home.svg',
                         width: normalSvgSize),
                 label: ''),
             BottomNavigationBarItem(
-                icon: c.selectedMenu.value == 1
+                icon: controller.selectedMenu.value == 1
                     ? SvgPicture.asset('assets/icons/location_fill.svg',
                         width: normalSvgSize)
                     : SvgPicture.asset('assets/icons/location.svg',
                         width: normalSvgSize),
                 label: ''),
             BottomNavigationBarItem(
-                icon: c.selectedMenu.value == 2
+                icon: controller.selectedMenu.value == 2
                     ? SvgPicture.asset('assets/icons/bookmark_fill.svg',
                         width: normalSvgSize)
                     : SvgPicture.asset('assets/icons/bookmark.svg',
                         width: normalSvgSize),
                 label: ''),
             BottomNavigationBarItem(
-                icon: c.selectedMenu.value == 3
+                icon: controller.selectedMenu.value == 3
                     ? SvgPicture.asset('assets/icons/profile_fill.svg',
                         width: mediumSvgSize + 2)
                     : SvgPicture.asset('assets/icons/profile.svg',
                         width: mediumSvgSize + 4),
                 label: ''),
           ],
-          currentIndex: c.selectedMenu.value,
+          currentIndex: controller.selectedMenu.value,
           backgroundColor: Colors.transparent,
           showSelectedLabels: false,
           showUnselectedLabels: false,
           type: BottomNavigationBarType.fixed,
           elevation: 0,
-          onTap: c.setSelectedMenu,
+          onTap: controller.setSelectedMenu,
         ),
       ),
     );

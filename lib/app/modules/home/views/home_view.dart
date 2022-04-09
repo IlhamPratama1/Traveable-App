@@ -21,8 +21,6 @@ import 'pages/profile_page.dart';
 class HomeView extends GetView<HomeController> {
   HomeView({Key? key}) : super(key: key);
 
-  final HomeController c = Get.find();
-
   final List<Widget> _sectionPages = <Widget>[
     const HomePage(),
     const ExplorePage(),
@@ -35,8 +33,11 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
       backgroundColor: mBaseColor,
       appBar: const TopNavigation(),
-      body: Obx(() => _sectionPages.elementAt(c.selectedMenu.value)),
-      bottomNavigationBar: BottomNavigation(),
+      body: Obx(() => IndexedStack(
+            index: controller.selectedMenu.value,
+            children: _sectionPages,
+          )),
+      bottomNavigationBar: const BottomNavigation(),
     );
   }
 }

@@ -9,9 +9,9 @@ import 'app/routes/app_pages.dart';
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     systemNavigationBarColor: Colors.white,
-    statusBarColor: Colors.white,
-    statusBarBrightness: Brightness.dark,
-    statusBarIconBrightness: Brightness.dark,
+    statusBarColor: Colors.transparent,
+    statusBarBrightness: Brightness.light,
+    statusBarIconBrightness: Brightness.light,
     systemNavigationBarIconBrightness: Brightness.dark,
   ));
   runApp(const MyApp());

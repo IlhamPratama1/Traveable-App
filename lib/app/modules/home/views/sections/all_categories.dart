@@ -2,10 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:travelable_app/constant/color_constant.dart';
 
 // Constant
 import 'package:travelable_app/constant/text_style_constant.dart';
+import 'package:travelable_app/constant/color_constant.dart';
 
 class AllCategories extends GetView {
   const AllCategories({Key? key}) : super(key: key);
@@ -23,7 +23,9 @@ class AllCategories extends GetView {
             Column(
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed('/introduction');
+                  },
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.all(18),
                     elevation: 0,
