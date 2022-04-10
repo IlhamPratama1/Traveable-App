@@ -14,12 +14,12 @@ class TitleSection extends GetView {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         RichText(
-            text: TextSpan(
-                text: 'Hello,',
-                style: titleText1,
-                children: <TextSpan>[
-              TextSpan(text: ' Sophia', style: titleText2)
-            ])),
+          text: TextSpan(
+            text: 'Hello,',
+            style: titleText1,
+            children: <TextSpan>[TextSpan(text: ' Sophia', style: titleText2)],
+          ),
+        ),
         const SizedBox(height: 2),
         Text('Ready to create new journey today !', style: subtitleText)
       ],

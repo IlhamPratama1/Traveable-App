@@ -23,9 +23,7 @@ class AllCategories extends GetView {
             Column(
               children: [
                 ElevatedButton(
-                  onPressed: () {
-                    Get.toNamed('/introduction');
-                  },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.all(18),
                     elevation: 0,

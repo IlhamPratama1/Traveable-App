@@ -2,6 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:travelable_app/constant/color_constant.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// Introduction
+var introTitleBText = GoogleFonts.nunito(
+    fontWeight: FontWeight.w700,
+    fontSize: 40,
+    height: 1,
+    letterSpacing: -1,
+    color: Colors.white);
+var introTitleNText = GoogleFonts.nunito(
+    fontWeight: FontWeight.normal,
+    letterSpacing: -1,
+    fontSize: 40,
+    color: Colors.white);
+var introSubtitleText = GoogleFonts.openSans(
+    fontWeight: FontWeight.normal,
+    fontSize: 13,
+    height: 1.2,
+    color: Colors.white);
+
+// Top Nav
 var logoText = GoogleFonts.nunito(
     fontWeight: FontWeight.bold, fontSize: 16, color: mBlackColor);
 
