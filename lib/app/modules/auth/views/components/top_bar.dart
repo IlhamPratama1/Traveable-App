@@ -7,6 +7,9 @@ import 'package:get/get.dart';
 import 'package:travelable_app/constant/color_constant.dart';
 import 'package:travelable_app/constant/value_const.dart';
 
+// Routes
+import 'package:travelable_app/app/routes/app_pages.dart';
+
 class TopBar extends GetView with PreferredSizeWidget {
   const TopBar({Key? key}) : super(key: key);
 
@@ -21,7 +24,7 @@ class TopBar extends GetView with PreferredSizeWidget {
       backgroundColor: mBaseColor,
       title: IconButton(
         onPressed: () {
-          Get.back();
+          Get.offAllNamed(Routes.introduction);
         },
         icon: SvgPicture.asset(
           'assets/icons/backButton.svg',
