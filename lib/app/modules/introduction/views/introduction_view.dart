@@ -1,5 +1,6 @@
 // Lib
 import 'package:flutter/material.dart';
+import 'package:flutter/physics.dart';
 import 'package:get/get.dart';
 
 // Controller
@@ -16,7 +17,7 @@ class IntroductionView extends GetView {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SlideView());
+    return Scaffold(resizeToAvoidBottomInset: false, body: SlideView());
   }
 }
 
@@ -32,6 +33,7 @@ class SlideView extends GetView<IntroductionController> {
     return Stack(
       children: <Widget>[
         PageView(
+          physics: const CustomPageViewScrollPhysics(),
           onPageChanged: controller.setSlide,
           children: introductionScreens,
         ),
@@ -72,4 +74,21 @@ class SlideView extends GetView<IntroductionController> {
       ],
     );
   }
+}
+
+class CustomPageViewScrollPhysics extends ScrollPhysics {
+  const CustomPageViewScrollPhysics({ScrollPhysics? parent})
+      : super(parent: parent);
+
+  @override
+  CustomPageViewScrollPhysics applyTo(ScrollPhysics? ancestor) {
+    return CustomPageViewScrollPhysics(parent: buildParent(ancestor)!);
+  }
+
+  @override
+  SpringDescription get spring => const SpringDescription(
+        mass: 50,
+        stiffness: 100,
+        damping: 0.8,
+      );
 }

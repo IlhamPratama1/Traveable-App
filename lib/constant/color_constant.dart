@@ -7,7 +7,7 @@ const mBlackColor = Color.fromRGBO(0, 0, 0, 1);
 
 const mBlueMedColor = Color.fromRGBO(0, 180, 216, 1);
 const mBlueBoldColor = Color.fromRGBO(0, 119, 182, 1);
-const mBlueHardColor = Color.fromRGBO(3, 4, 9, 1);
+const mBlueHardColor = Color.fromRGBO(3, 4, 94, 1);
 
 const mBlueTransparentColor = Color.fromRGBO(0, 119, 182, 0.04);
 const mBlueSoftTransparentColor = Color.fromRGBO(0, 215, 255, 0.1);

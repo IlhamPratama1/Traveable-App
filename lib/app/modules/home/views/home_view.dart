@@ -32,6 +32,7 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: mBaseColor,
+      resizeToAvoidBottomInset: false,
       appBar: const TopNavigation(),
       body: Obx(() => IndexedStack(
             index: controller.selectedMenu.value,

@@ -12,16 +12,16 @@ final introductionData = <IntroductionModel>[
   IntroductionModel(
       'assets/images/introduction_1.jpg',
       'Explore',
-      '  New\nPlace',
+      ' New\nPlace',
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."),
   IntroductionModel(
       'assets/images/introduction_2.jpg',
       'Explore',
-      '  New\nPlace',
+      ' New\nPlace',
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."),
   IntroductionModel(
       'assets/images/introduction_3.jpg',
       'Explore',
-      '  New\nPlace',
+      ' New\nPlace',
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."),
 ];

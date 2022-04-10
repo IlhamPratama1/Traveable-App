@@ -21,7 +21,7 @@ class IntroductionScreen extends GetView {
   Widget build(BuildContext context) {
     model.imageUrl;
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 64, horizontal: 52),
+      padding: const EdgeInsets.symmetric(vertical: 86, horizontal: 52),
       decoration: BoxDecoration(
         image: DecorationImage(
             image: AssetImage(model.imageUrl), fit: BoxFit.cover),
@@ -41,20 +41,21 @@ class IntroductionScreen extends GetView {
           const SizedBox(height: 10),
           Text(model.subtitle, style: introSubtitleText),
           const SizedBox(height: 18),
-          InkWell(
-            onTap: () {
-              Get.offAllNamed(Routes.home);
-            },
-            child: Container(
-              width: 40,
-              height: 40,
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: const Color.fromRGBO(255, 255, 255, 0.3)),
-              child: SvgPicture.asset('assets/icons/arrow.svg'),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 18),
+              elevation: 0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              primary: const Color.fromRGBO(255, 255, 255, 0.3),
+              minimumSize: const Size(10, 10),
             ),
-          )
+            onPressed: () {
+              Get.toNamed(Routes.login);
+            },
+            child: SvgPicture.asset('assets/icons/arrow.svg'),
+          ),
         ],
       ),
     );

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travelable_app/constant/color_constant.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// Introduction
+// --- Introduction Page
 var introTitleBText = GoogleFonts.nunito(
     fontWeight: FontWeight.w700,
     fontSize: 40,
@@ -16,10 +16,11 @@ var introTitleNText = GoogleFonts.nunito(
     color: Colors.white);
 var introSubtitleText = GoogleFonts.openSans(
     fontWeight: FontWeight.normal,
-    fontSize: 13,
+    fontSize: 12,
     height: 1.2,
     color: Colors.white);
 
+// ---- Home Page
 // Top Nav
 var logoText = GoogleFonts.nunito(
     fontWeight: FontWeight.bold, fontSize: 16, color: mBlackColor);
@@ -45,7 +46,7 @@ var mainText = GoogleFonts.nunito(
     fontWeight: FontWeight.bold, fontSize: 18, color: mBlackColor);
 var placeFilterText = GoogleFonts.openSans(
     fontWeight: FontWeight.normal, color: mBlueBoldColor, fontSize: 13);
-// --- Place Card
+// Place Card
 var placeCardText = GoogleFonts.nunito(
     fontWeight: FontWeight.bold, fontSize: 14, color: Colors.white);
 var countryCardText = GoogleFonts.openSans(
@@ -69,3 +70,13 @@ var hotelCountryCard = GoogleFonts.openSans(
     color: const Color.fromRGBO(0, 0, 0, 0.6));
 var ratingHotelCard = GoogleFonts.openSans(
     fontWeight: FontWeight.normal, fontSize: 11, color: mBlackColor);
+
+// --- Auth Page
+var subtitleInfoText = GoogleFonts.openSans(
+    fontWeight: FontWeight.normal,
+    fontSize: 13,
+    color: const Color.fromRGBO(0, 0, 0, 0.4));
+var highlightTextButton = GoogleFonts.nunito(
+    fontWeight: FontWeight.bold, fontSize: 15, color: mBlueHardColor);
+var valueInputText = GoogleFonts.openSans(
+    fontWeight: FontWeight.normal, fontSize: 13, color: Colors.black);
