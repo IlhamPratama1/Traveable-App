@@ -24,7 +24,7 @@ Android
 
 ### Project status
 
-This project is still in development
+This project is still in development see [develop](https://gitlab.com/pratamailham206/travelable-app-android-flutter/-/tree/develop)
 
 # Getting started
 
