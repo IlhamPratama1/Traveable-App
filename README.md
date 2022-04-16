@@ -30,7 +30,9 @@ This project is still in development
 
 Run flutter project.
 
-`flutter run`
+``
+flutter run
+``
 
 # What's included
 
@@ -39,6 +41,8 @@ Run flutter project.
 - CRUD data integrated with custom API
 - Book and payment system
 - Saved favorite item
+- Dependency Injection
+- Validation
 - Unit tests including code coverage
 - Search bar
 - Detail information item
@@ -57,13 +61,13 @@ this project integrated with [Custom API](https://gitlab.com/pratamailham206/tra
 
 # Screenshot
 
-<img src="images/1.jpeg"  width="30%">
-<img src="images/2.jpeg"  width="30%">
-<img src="images/3.jpeg"  width="30%">
-<img src="images/4.jpeg"  width="30%">
-<img src="images/5.jpeg"  width="30%">
-<img src="images/6.jpeg"  width="30%">
-<img src="images/7.jpeg"  width="30%">
+<img src="images/1.jpeg"  width="24.5%">
+<img src="images/2.jpeg"  width="24.5%">
+<img src="images/3.jpeg"  width="24.5%">
+<img src="images/4.jpeg"  width="24.5%">
+<img src="images/5.jpeg"  width="24.5%">
+<img src="images/6.jpeg"  width="24.5%">
+<img src="images/7.jpeg"  width="24.5%">
 
 # License
 
