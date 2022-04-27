@@ -30,9 +30,7 @@ This project is still in development, see [develop](https://gitlab.com/pratamail
 
 Run flutter project.
 
-``
-flutter run
-``
+### `flutter run`
 
 # What's included
 
